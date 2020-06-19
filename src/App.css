@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 2s ease-in-out;
   }
 }
 
@@ -28,11 +28,26 @@
   color: #61dafb;
 }
 
+.pokemon-name {
+  font-size: calc(20px + 2vmin);
+}
+
+.pokemon-desc {
+  width: 50%;
+  margin-top: 10px;
+}
+
 @keyframes App-logo-spin {
-  from {
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
